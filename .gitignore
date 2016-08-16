@@ -1,0 +1,6 @@
+#"compiled" python
+**.pyo
+**.pyc
+
+#Ninja project file
+*.nja
