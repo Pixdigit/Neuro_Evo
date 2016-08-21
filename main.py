@@ -21,7 +21,7 @@ def all_perf(pop):
 	return sorted({net.id: round(perf_func(net), 2) for net in pop}.items(),
 			key=lambda t: t[1], reverse=True)
 
-perf_func = lambda net: sum(net.result) / float(len(net.result))
+perf_func = lambda net: sum(net.result) / float(len(net.result)) if len(net.result) != 0 else 0
 
 
 compo = competition.create_compo(10, conf)
@@ -32,7 +32,7 @@ compo.set_perf_func(perf_func)
 
 for a in xrange(200):
 	compo.calc([10])
-	compo.repro(min_performance=0, random_kills=0.5)
+	compo.repro(min_performance=0.01, random_kills=0.5)
 	print all_perf(compo.population)
 #	time.sleep(1)
 	#gens.append(all_perf(compo.population))

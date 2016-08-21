@@ -1,17 +1,54 @@
 # -*- coding: utf-8 -*-
 import nodes
-import copy
 import name_gen
 import random
+import vis
+
+
+class const_rand():
+
+	def __init__(self, seed=None):
+		if seed is None:
+			seed = random.randint(0, 999999)
+		self.seed = seed
+
+	def randint(self, a, b):
+		random.seed(self.seed)
+		result = random.randint(a, b)
+		self.seed = random.randint(0, 999999)
+		return result
+
+	def random(self):
+		random.seed(self.seed)
+		result = random.random()
+		self.seed = int(999999 * result)
+		return result
+
+	def triangular(self, a, b, c):
+		random.seed(self.seed)
+		result = random.triangular(a, b, c)
+		self.seed = int(999999 * result)
+		return result
+
+	def choice(self, iterable):
+		random.seed(self.seed)
+		result = random.choice(iterable)
+		self.seed = random.randint(0, 999999)
+		return result
+
+	def copy(self):
+		return const_rand(self.seed)
 
 
 class net():
 
-	def __init__(self, d_nodes, d_in_nodes, d_out_nodes, energy=-1):
+	def __init__(self, d_nodes, d_in_nodes, d_out_nodes, energy=-1, seed=None):
 		"""Create a new net"""
 
 		self.energy = energy
-		self.id = name_gen.new_name()
+		self.seed = seed
+		self.random = const_rand(self.seed)
+		self.id = name_gen.new_name(self.random.choice)
 		self.result = []
 
 		d_compute_nodes = d_nodes - d_in_nodes - d_out_nodes
@@ -23,7 +60,7 @@ class net():
 
 		for node in range(d_compute_nodes):
 			new_node = nodes.new_node()
-			d_in_cons = random.randint(0, 5)
+			d_in_cons = self.random.randint(0, 5)
 
 			for con_nr in range(d_in_cons):
 
@@ -35,7 +72,7 @@ class net():
 				if max_index < 0:
 					break
 				else:
-					index = int(random.triangular(0, max_index, max_index))
+					index = int(self.random.triangular(0, max_index, max_index))
 					in_node = possible_in_nodes[index]
 					new_node.input_nodes.append(in_node)
 					new_node.influence_nodes.append(in_node.influence_nodes + [in_node])
@@ -56,15 +93,15 @@ class net():
 				self.compute_nodes.remove(node)
 
 		for node in self.output_nodes:
-			d_in_cons = random.randint(0, 5)
+			d_in_cons = self.random.randint(0, 5)
 			if d_in_cons > len(self.input_nodes + self.compute_nodes):
 				d_in_cons = len(self.input_nodes + self.compute_nodes)
 
 			for con_nr in range(d_in_cons):
-				con_node = random.choice(self.input_nodes + self.compute_nodes)
+				con_node = self.random.choice(self.input_nodes + self.compute_nodes)
 
 				while con_node in node.input_nodes:
-					con_node = random.choice(self.input_nodes + self.compute_nodes)
+					con_node = self.random.choice(self.input_nodes + self.compute_nodes)
 
 				node.input_nodes.append(con_node)
 				con_node.output_nodes.append(node)
@@ -92,18 +129,24 @@ class net():
 
 		self.energy -= cost
 
-		child = copy.deepcopy(self)
+		child = self.copy()
 		child.energy = cost
 		child.id = name_gen.new_name()
-		#print "Node ID: " + str(child.compute_nodes[0].id)
-		#print "First wheight: " + str(child.compute_nodes[0].weights[0])
+		new_nodes = []
 		for node in child.compute_nodes:
-			node = node.repro(child.output_nodes, 10)
-		#print "After mutation"
-		#print "Node ID: " + str(child.compute_nodes[0].id)
-		#print "First wheight: " + str(child.compute_nodes[0].weights[0])
-		#print
+			new_nodes.append(node.repro(child.output_nodes, 10))
+		child.compute_nodes = new_nodes
 
+		return child
+
+	def copy(self):
+		child = net(0, 0, 0, energy=self.energy, seed=self.seed)
+		child.input_nodes = list(self.input_nodes)
+		child.compute_nodes = list(self.compute_nodes)
+		child.output_nodes = list(self.output_nodes)
+		child.energy = self.energy
+		child.id = self.id
+		child.random = self.random.copy()
 		return child
 
 	def use_energy(self, amount):
