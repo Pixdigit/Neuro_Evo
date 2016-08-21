@@ -107,7 +107,6 @@ class new_node():
 			if not self.react_type == "constant":
 				for input_num in range(len(self.input_nodes)):
 					merged_input += self.input_nodes[input_num].value * self.weights[input_num]
-					#print self.input_nodes[input_num].value - self.input_nodes[input_num].value * self.weights[input_num]
 		elif len(self.input_nodes) == 0:
 			merged_input = data_in
 		else:
@@ -150,6 +149,7 @@ class new_node():
 						child.random.choice(possible_output_nodes))
 
 		connection_changes = [remove_rand_out_con, add_rand_out_con]
+		connection_changes
 
 #		if config_list[0] <= 0.00001 * relative_mutation:
 #			#change connections
@@ -171,5 +171,4 @@ class new_node():
 			for a in range(d_weights_change):
 				for caller_num in range(len(child.callers)):
 					child.weights[caller_num] *= 500000 + child.random.random() / 10
-					print child.weights[caller_num]
 		return child

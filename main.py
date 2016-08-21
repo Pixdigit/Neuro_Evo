@@ -1,11 +1,12 @@
-# -*- coding: utf-8 -*-
+# -*- cod20ing: utf-8 -*-
 import competition
 import time
 import random
 import json
+#import vis
 
 
-conf = [5, 1, 1]
+conf = [20, 2, 2]
 gens = []
 
 
@@ -20,19 +21,19 @@ def all_perf(pop):
 	return sorted({net.id: round(perf_func(net), 2) for net in pop}.items(),
 			key=lambda t: t[1], reverse=True)
 
-perf_func = lambda net: net.result[0]
+perf_func = lambda net: sum(net.result) / float(len(net.result))
 
-compo = competition.create_compo(5, conf)
+
+compo = competition.create_compo(10, conf)
 compo.set_perf_func(perf_func)
 
-compo.calc([10])
-print all_perf(compo.population)[:10]
+#for net in compo.population:
+#	vis.draw_net(net)
 
-
-for a in xrange(20):
+for a in xrange(200):
 	compo.calc([10])
-	compo.repro(min_performance=0, random_kills=0.25)
-	print all_perf(compo.population)[:10]
+	compo.repro(min_performance=0, random_kills=0.5)
+	print all_perf(compo.population)
 #	time.sleep(1)
 	#gens.append(all_perf(compo.population))
 #	if a % 100 == 0:

@@ -17,45 +17,58 @@ class net():
 		d_compute_nodes = d_nodes - d_in_nodes - d_out_nodes
 
 		self.output_nodes = [nodes.new_node() for a in range(d_out_nodes)]
-		self.compute_nodes = [nodes.new_node() for a in range(d_compute_nodes)]
 		self.input_nodes = [nodes.new_node() for a in range(d_in_nodes)]
 
-		for node in self.compute_nodes:
-			possible_nodes = [possible_node for possible_node in self.compute_nodes
-					if possible_node not in node.influence_nodes]
+		self.compute_nodes = list(self.input_nodes)
 
-			if len(possible_nodes) > 1:
-				possible_nodes.remove(node)
+		for node in range(d_compute_nodes):
+			new_node = nodes.new_node()
+			d_in_cons = random.randint(0, 5)
 
-				con_node = random.choice(possible_nodes)
+			for con_nr in range(d_in_cons):
 
-				node.output_nodes.append(con_node)
-				con_node.input_nodes.append(node)
-				con_node.influence_nodes = con_node.influence_nodes + node.influence_nodes
-			elif len(possible_nodes) < 1:
-				self.compute_nodes.remove(node)
+				possible_in_nodes = [in_node for in_node in self.compute_nodes
+						if in_node not in new_node.input_nodes]
+
+				max_index = len(possible_in_nodes) - 1
+
+				if max_index < 0:
+					break
+				else:
+					index = int(random.triangular(0, max_index, max_index))
+					in_node = possible_in_nodes[index]
+					new_node.input_nodes.append(in_node)
+					new_node.influence_nodes.append(in_node.influence_nodes + [in_node])
+					in_node.output_nodes.append(new_node)
+
+			new_node.set_caller_weights()
+			self.compute_nodes.append(new_node)
 
 		for node in self.input_nodes:
-			con_node = random.choice(self.compute_nodes)
-			#TODO: possible_nodes.remove(con_node)
-
-			node.output_nodes.append(con_node)
-			con_node.input_nodes.append(node)
-			con_node.influence_nodes.append(node)
-
-		for node in self.output_nodes:
-			con_node = random.choice(self.compute_nodes)
-
-			while con_node in node.influence_nodes:
-				con_node = random.choice(possible_nodes)
-
-			#TODO: possible_nodes.remove(con_node)
-
-			node.input_nodes.append(con_node)
-			con_node.output_nodes.append(node)
+			self.compute_nodes.remove(node)
 
 		for node in self.compute_nodes:
-			node.set_caller_weights()
+			if len(node.output_nodes) + len(node.input_nodes) == 0:
+				self.compute_nodes.remove(node)
+			elif len(node.output_nodes) == 0:
+				for in_node in node.input_nodes:
+					in_node.output_nodes.remove(node)
+				self.compute_nodes.remove(node)
+
+		for node in self.output_nodes:
+			d_in_cons = random.randint(0, 5)
+			if d_in_cons > len(self.input_nodes + self.compute_nodes):
+				d_in_cons = len(self.input_nodes + self.compute_nodes)
+
+			for con_nr in range(d_in_cons):
+				con_node = random.choice(self.input_nodes + self.compute_nodes)
+
+				while con_node in node.input_nodes:
+					con_node = random.choice(self.input_nodes + self.compute_nodes)
+
+				node.input_nodes.append(con_node)
+				con_node.output_nodes.append(node)
+
 		for node in self.output_nodes:
 			node.set_caller_weights()
 
@@ -81,7 +94,7 @@ class net():
 
 		child = copy.deepcopy(self)
 		child.energy = cost
-		child.id = self.id + "+" + name_gen.new_name()
+		child.id = name_gen.new_name()
 		#print "Node ID: " + str(child.compute_nodes[0].id)
 		#print "First wheight: " + str(child.compute_nodes[0].weights[0])
 		for node in child.compute_nodes:
