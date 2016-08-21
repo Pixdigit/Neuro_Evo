@@ -1,0 +1,2002 @@
+Traceback (most recent call last):
+  File "main.py", line 28, in <module>
+    compo.calc([10])
+  File "/home/studio/Dokumente/Neuro_Evo/competition.py", line 29, in calc
+    net.compute(data_input)
+  File "/home/studio/Dokumente/Neuro_Evo/net.py", line 65, in compute
+    self.input_nodes[channel].input(data_input[channel])
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 119, in input
+    out_node.input(self.value)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 116, in input
+    self.value = self.operation(merged_input)
+  File "/home/studio/Dokumente/Neuro_Evo/nodes.py", line 59, in <lambda>
+    return lambda x: float(x) / (1 + abs(x))
+RuntimeError: maximum recursion depth exceeded while calling a Python object
