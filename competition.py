@@ -49,7 +49,6 @@ class create_compo():
 		for net in list(self.population):
 			if self.net_perf(net) <= min_performance:
 				net.dead = True
-				#print("Starved: " + net.id)
 
 		total_kills = int(total_kills)
 
@@ -62,7 +61,6 @@ class create_compo():
 
 			if not net.dead:
 				net.dead = True
-				#print(("Unlucky: " + net.id))
 			else:
 				net.dead = False
 				counter_net.dead = True
@@ -86,7 +84,6 @@ class create_compo():
 
 		while len(self.population) < self.support_amount:
 			index = int(random.triangular(0, old_gen_max_index))
-			#print "New Repro: " + self.population[index].id
 			self.population.append(self.population[index].repro(cost))
 
 	def sort(self):

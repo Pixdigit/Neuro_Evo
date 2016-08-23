@@ -2,7 +2,6 @@
 import nodes
 import name_gen
 import random
-import vis
 
 
 class const_rand():
@@ -58,7 +57,7 @@ class net():
 
 		self.compute_nodes = list(self.input_nodes)
 
-		for node in range(d_compute_nodes):
+		for node_num in range(d_compute_nodes):
 			new_node = nodes.new_node()
 			d_in_cons = self.random.randint(0, 5)
 
@@ -84,14 +83,6 @@ class net():
 		for node in self.input_nodes:
 			self.compute_nodes.remove(node)
 
-		for node in self.compute_nodes:
-			if len(node.output_nodes) + len(node.input_nodes) == 0:
-				self.compute_nodes.remove(node)
-			elif len(node.output_nodes) == 0:
-				for in_node in node.input_nodes:
-					in_node.output_nodes.remove(node)
-				self.compute_nodes.remove(node)
-
 		for node in self.output_nodes:
 			d_in_cons = self.random.randint(0, 5)
 			if d_in_cons > len(self.input_nodes + self.compute_nodes):
@@ -105,6 +96,17 @@ class net():
 
 				node.input_nodes.append(con_node)
 				con_node.output_nodes.append(node)
+
+		for node in self.compute_nodes:
+			if len(node.output_nodes) + len(node.input_nodes) == 0:
+				self.compute_nodes.remove(node)
+			elif len(node.output_nodes) == 0:
+				for in_node in node.input_nodes:
+					in_node.output_nodes.remove(node)
+				self.compute_nodes.remove(node)
+
+#		for node in self.input_nodes:
+#			if len(node.output_nodes
 
 		for node in self.output_nodes:
 			node.set_caller_weights()
@@ -134,16 +136,25 @@ class net():
 		child.id = name_gen.new_name()
 		new_nodes = []
 		for node in child.compute_nodes:
-			new_nodes.append(node.repro(child.output_nodes, 10))
+			new_nodes.append(node.repro(child, 100))
 		child.compute_nodes = new_nodes
 
 		return child
 
 	def copy(self):
 		child = net(0, 0, 0, energy=self.energy, seed=self.seed)
-		child.input_nodes = list(self.input_nodes)
-		child.compute_nodes = list(self.compute_nodes)
-		child.output_nodes = list(self.output_nodes)
+		child.input_nodes = [node.copy() for node in self.input_nodes]
+		child.compute_nodes = [node.copy() for node in self.compute_nodes]
+		child.output_nodes = [node.copy() for node in self.output_nodes]
+
+		enable_node = lambda node: node.get_nodes_by_id(child)
+		for in_node in child.input_nodes:
+			enable_node(in_node)
+		for co_node in child.compute_nodes:
+			enable_node(co_node)
+		for ou_node in child.output_nodes:
+			enable_node(ou_node)
+
 		child.energy = self.energy
 		child.id = self.id
 		child.random = self.random.copy()

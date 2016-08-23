@@ -66,14 +66,17 @@ class new_node():
 			self.seed = random.randint(0, 999999)
 		else:
 			self.seed = seed
-		self.random = const_rand(seed)
+		self.random = const_rand(self.seed)
 		self.state = "Idle"
 		self.weights = []
 		self.influence_nodes = []
 		self.input_nodes = []
+		self.input_nodes_ids = []
 		self.output_nodes = []
+		self.output_nodes_ids = []
 
 		self.id = self.random.random()
+
 		self.value = self.id
 
 		reaction = self.random.random() * 100
@@ -82,13 +85,27 @@ class new_node():
 		operation = self.random.random() * 100
 		self.operation = get_operation_type(operation)
 
+	def set_nodes_by_id(self):
+		self.input_nodes_ids = [node.id for node in self.input_nodes]
+		self.output_nodes_ids = [node.id for node in self.output_nodes]
+
+	def get_nodes_by_id(self, net):
+		all_nodes = net.input_nodes + net.compute_nodes + net.output_nodes
+		in_node = lambda node: node.id in self.input_nodes_ids
+		ou_node = lambda node: node.id in self.output_nodes_ids
+		self.input_nodes = list(filter(in_node, all_nodes))
+		self.output_nodes = list(filter(ou_node, all_nodes))
+
 	def set_caller_weights(self):
-		for caller in list(self.input_nodes):
+		rm_nodes = []
+		for caller in self.input_nodes:
 			weight = self.random.random() * 2 - 0.5
 			if -0.01 < weight < 0.01:
-				caller.remove_connection(self)
+				caller.output_nodes.remove(self)
+				rm_nodes.append(caller)
 			else:
 				self.weights.append(weight)
+		self.input_nodes = [node for node in self.input_nodes if not node in rm_nodes]
 
 	def input(self, data_in):
 		self.state = "Waiting"
@@ -104,6 +121,9 @@ class new_node():
 		#Test if all inputs are finished
 		if (all([node.state == "Idle" for node in self.input_nodes])
 				and len(self.input_nodes) > 0):
+			#print len(self.input_nodes)
+			#print len(self.weights)
+
 			if not self.react_type == "constant":
 				for input_num in range(len(self.input_nodes)):
 					merged_input += self.input_nodes[input_num].value * self.weights[input_num]
@@ -126,6 +146,7 @@ class new_node():
 	def add_connection(self, node):
 		self.output_nodes.append(node)
 		node.add_caller(self)
+		self.weights.append(self.random.random() * 2 - 0.5)
 
 	def remove_connection(self, node):
 		self.output_nodes.remove(node)
@@ -133,20 +154,25 @@ class new_node():
 
 	def copy(self):
 		child = new_node(self.seed)
-		child.output_nodes = list(self.output_nodes)
+		self.set_nodes_by_id()
+		child.input_nodes_ids = list(self.input_nodes_ids)
+		child.output_nodes_ids = list(self.output_nodes_ids)
 		child.weights = list(self.weights)
-		child.callers = list(self.input_nodes)
+		child.output_nodes = []
+		child.input_nodes = []
 		return child
 
-	def repro(self, possible_output_nodes, relative_mutation=1):
+	def repro(self, net, relative_mutation=1):
+
 		child = self.copy()
+		child.get_nodes_by_id(net)
 		child.random = const_rand()
 		config_list = [child.random.random() for a in range(6)]
 
 		remove_rand_out_con = lambda child: child.remove_connection(
 						child.random.choice(child.output_nodes))
 		add_rand_out_con = lambda child: child.add_connection(
-						child.random.choice(possible_output_nodes))
+						child.random.choice(net.output_nodes))
 
 		connection_changes = [remove_rand_out_con, add_rand_out_con]
 		connection_changes
@@ -165,10 +191,15 @@ class new_node():
 #			for node in child.output_nodes:
 #				child.output_nodes.remove_connection(node)
 #			child.energy = 0
+
 		if config_list[5] <= 0.1 * relative_mutation:
-			d_weights_change = random.randint(0,
-						int(len(child.callers) / 3.0 * 2 * relative_mutation))
+			d_weights_change = max(1,
+					random.randint(0,
+						int(len(child.input_nodes) / 3.0 * 2 * relative_mutation)),
+					)
 			for a in range(d_weights_change):
-				for caller_num in range(len(child.callers)):
-					child.weights[caller_num] *= 500000 + child.random.random() / 10
+
+				for caller_num in range(len(child.input_nodes)):
+					child.weights[caller_num] *= 1 + child.random.random() / 10
+
 		return child
