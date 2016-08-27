@@ -92,9 +92,9 @@ class new_node():
 	def get_nodes_by_id(self, net):
 		all_nodes = net.input_nodes + net.compute_nodes + net.output_nodes
 		in_node = lambda node: node.id in self.input_nodes_ids
-		ou_node = lambda node: node.id in self.output_nodes_ids
+		out_node = lambda node: node.id in self.output_nodes_ids
 		self.input_nodes = list(filter(in_node, all_nodes))
-		self.output_nodes = list(filter(ou_node, all_nodes))
+		self.output_nodes = list(filter(out_node, all_nodes))
 
 	def set_caller_weights(self):
 		rm_nodes = []
@@ -121,8 +121,6 @@ class new_node():
 		#Test if all inputs are finished
 		if (all([node.state == "Idle" for node in self.input_nodes])
 				and len(self.input_nodes) > 0):
-			#print len(self.input_nodes)
-			#print len(self.weights)
 
 			if not self.react_type == "constant":
 				for input_num in range(len(self.input_nodes)):
@@ -181,10 +179,10 @@ class new_node():
 #			#change connections
 #			for a in range(len(child.output_nodes) / 5):
 #				child.random.choice(connection_changes)(child)
-#		elif config_list[1] <= 0.000001 * relative_mutation:
-#			child.react_type = get_reaction_type(child.random.random() * 100)
-#		elif config_list[2] <= 0.000005 * relative_mutation:
-#			child.operation = get_operation_type(child.random.random() * 100)
+		if config_list[1] <= 0.000001 * relative_mutation:
+			child.react_type = get_reaction_type(child.random.random() * 100)
+		elif config_list[2] <= 0.000005 * relative_mutation:
+			child.operation = get_operation_type(child.random.random() * 100)
 #		elif config_list[3] <= 0.0000001 * relative_mutation:
 #			for node in child.callers:
 #				node.remove_connection(child)
@@ -192,7 +190,7 @@ class new_node():
 #				child.output_nodes.remove_connection(node)
 #			child.energy = 0
 
-		if config_list[5] <= 0.1 * relative_mutation:
+		elif config_list[5] <= 0.1 * relative_mutation:
 			d_weights_change = max(1,
 					random.randint(0,
 						int(len(child.input_nodes) / 3.0 * 2 * relative_mutation)),
@@ -200,6 +198,8 @@ class new_node():
 			for a in range(d_weights_change):
 
 				for caller_num in range(len(child.input_nodes)):
-					child.weights[caller_num] *= 1 + child.random.random() / 10
+					factor = 1000 + child.random.random()
+					child.weights[caller_num] *= factor
+					#print str(self.id) + " : " + str(factor)
 
 		return child

@@ -20,6 +20,9 @@ class create_compo():
 			neuro_net = net.net(d_all_nodes, d_input_nodes, d_output_nodes, start_energy)
 			self.population.append(neuro_net)
 
+		self.net_perf = lambda net: (sum(net.result) / float(len(net.result))
+					if len(net.result) != 0 else 0)
+
 	def set_perf_func(self, function):
 		self.net_perf = function
 

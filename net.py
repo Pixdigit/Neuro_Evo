@@ -85,14 +85,15 @@ class net():
 
 		for node in self.output_nodes:
 			d_in_cons = self.random.randint(0, 5)
-			if d_in_cons > len(self.input_nodes + self.compute_nodes):
-				d_in_cons = len(self.input_nodes + self.compute_nodes)
+			pos_nodes = self.compute_nodes
+			if d_in_cons > len(pos_nodes):
+				d_in_cons = len(pos_nodes)
 
 			for con_nr in range(d_in_cons):
-				con_node = self.random.choice(self.input_nodes + self.compute_nodes)
+				con_node = self.random.choice(pos_nodes)
 
 				while con_node in node.input_nodes:
-					con_node = self.random.choice(self.input_nodes + self.compute_nodes)
+					con_node = self.random.choice(pos_nodes)
 
 				node.input_nodes.append(con_node)
 				con_node.output_nodes.append(node)
@@ -132,12 +133,18 @@ class net():
 		self.energy -= cost
 
 		child = self.copy()
+		child.random = const_rand()
 		child.energy = cost
 		child.id = name_gen.new_name()
 		new_nodes = []
+
 		for node in child.compute_nodes:
-			new_nodes.append(node.repro(child, 100))
+			new_nodes.append(node.repro(child, 1000))
 		child.compute_nodes = new_nodes
+
+#		for node in child.out_nodes:
+#			new_nodes.append(node.repro(child, 100))
+		child.out_nodes = new_nodes
 
 		return child
 

@@ -10,7 +10,7 @@ def draw_net(net):
 	vertexes = {}
 	names = []
 	for node in all_nodes:
-		vertexes[node] = graph.add_vertex()
+		vertexes[node.id] = graph.add_vertex()
 		names.append(str(node.id))
 
 		if node in net.input_nodes:
@@ -20,20 +20,15 @@ def draw_net(net):
 		elif node in net.output_nodes:
 			mode = 3
 
-		v_color[vertexes[node]] = mode
-		v_name[vertexes[node]] = str(node.id)[:5]
+		v_color[vertexes[node.id]] = mode
+		v_name[vertexes[node.id]] = str(node.id)[:5]
 
 	edges = []
 
 	for node in all_nodes:
 		for con in node.output_nodes:
-			try:
-				sec_vert = vertexes[con]
-				edges.append(graph.add_edge(vertexes[node], sec_vert))
-			except KeyError:
-				print any(con.id == con2.id for con2 in all_nodes)
-				print con.id
-				print [nod.id for nod in all_nodes]
-				#raise Exception
+			sec_vert = vertexes[con.id]
+			edges.append(graph.add_edge(vertexes[node.id], sec_vert))
 
-	gt.graph_draw(graph, vertex_color=[1, 1, 1, 0], vertex_fill_color=v_color, vertex_text=v_name)
+	gt.graph_draw(graph, vertex_color=[2, 1, 1, 0],
+			vertex_fill_color=v_color, vertex_text=v_name)
