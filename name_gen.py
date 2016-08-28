@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-import random
-
+from const_rand import const_rand
 
 global used_names
 global vovels
@@ -13,8 +12,10 @@ consonants = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m",
 		"n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z"]
 length = 1
 
+rand = const_rand(seed=1)
 
-def new_name(choice=random.choice):
+
+def new_name(choice=rand.choice):
 
 	global length
 	global used_names
