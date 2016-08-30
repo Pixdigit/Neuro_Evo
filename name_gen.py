@@ -12,7 +12,7 @@ consonants = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m",
 		"n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z"]
 length = 1
 
-rand = const_rand(seed=1)
+rand = const_rand()
 
 
 def new_name(choice=rand.choice):

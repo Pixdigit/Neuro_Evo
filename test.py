@@ -13,7 +13,8 @@ def test_nodes():
 
 
 def test_net():
-	test_net = nets.new_net(1, 2, 1, seed=1)
+	test_net = nets.new_net(1, 2, 1, seed=0.234)
+	print((test_net.name))
 	print((test_net.input_nodes))
 	print((test_net.input_nodes[0].id))
 	print("")
@@ -30,8 +31,8 @@ def test_net():
 
 def test_graphs():
 	import vis
-	test_net = nets.new_net(1, 2, 1, seed=1)
+	test_net = nets.new_net(10, 20, 10, seed=1)
 	vis.draw_net(test_net)
 
-#test_graphs()
+test_graphs()
 test_net()
