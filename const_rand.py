@@ -8,6 +8,7 @@ class const_rand():
 		if seed is None:
 			seed = random.randint(0, 999999)
 		self.seed = seed
+		self.orig_seed = seed
 
 	def randint(self, a, b):
 		random.seed(self.seed)
@@ -32,3 +33,6 @@ class const_rand():
 		result = random.choice(iterable)
 		self.seed = random.randint(0, 999999)
 		return result
+
+	def copy(self):
+		return const_rand(self.orig_seed)
