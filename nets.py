@@ -53,6 +53,15 @@ class new_net():
 
 			self.output_nodes.append(output_node)
 
+		self.rm_no_out_nodes()
+		self.rm_no_out_nodes()
+		self.rm_no_out_nodes()
+
+		for index in range(len(self.compute_nodes)):
+			self.compute_nodes[index].set_weights()
+		for index in range(len(self.output_nodes)):
+			self.output_nodes[index].set_weights()
+
 	def compute(self, node_input):
 
 		assert len(node_input) == len(self.input_nodes)
@@ -68,13 +77,7 @@ class new_net():
 		for node_id in node_ids:
 			if node_id in [node.id for node in self.input_nodes]:
 				node = filter(lambda node: node.id == node_id, self.input_nodes)[0]
-				try:
-					node_input = in_id_map[node.id]
-				except:
-					print node.id
-					print in_id_map
-					print "ERROR"
-					exit()
+				node_input = in_id_map[node.id]
 				index = self.input_nodes.index(node)
 				self.input_nodes[index].input(node_input)
 			else:
@@ -82,3 +85,14 @@ class new_net():
 				more_nodes = node.get_missing_inputs()
 				self.recurse_resolve(more_nodes, in_id_map)
 				node.compute()
+
+	def rm_no_out_nodes(self):
+		all_callers = []
+		for node in self.compute_nodes + self.output_nodes:
+			for caller in node.callers:
+				if caller not in all_callers:
+					all_callers.append(caller)
+
+		for node in self.compute_nodes:
+			if node.id not in all_callers:
+				self.compute_nodes.remove(node)

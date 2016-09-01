@@ -11,14 +11,18 @@ class new_node():
 		self.value = 0
 		self.finished = False
 
-	def input(self, value):
-		self.value = value
-
 	def add_in(self, node):
 		self.callers[node.id] = False
 
+	def set_weights(self):
+		self.weights = [self.rand.random() * 2 - 0.5
+				for i in range(len(self.callers))]
+
 	def get_missing_inputs(self):
 		return [caller for caller in self.callers if not self.callers[caller]]
+
+	def input(self, value):
+		self.value = value
 
 	def compute(self):
 		self.finshed = True
