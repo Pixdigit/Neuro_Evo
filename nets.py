@@ -55,17 +55,30 @@ class new_net():
 
 	def compute(self, node_input):
 
+		assert len(node_input) == len(self.input_nodes)
+
+		in_id_map = {self.input_nodes[index].id: node_input[index]
+				for index in range(len(node_input))}
+
 		for result_node in self.output_nodes:
 			needed_input = result_node.get_missing_inputs()
-			self.recurse_resolve(needed_input)
+			self.recurse_resolve(needed_input, in_id_map)
 
-	def recurse_resolve(self, node_ids):
+	def recurse_resolve(self, node_ids, in_id_map):
 		for node_id in node_ids:
 			if node_id in [node.id for node in self.input_nodes]:
-				#TODO: set inputs
-				pass
+				node = filter(lambda node: node.id == node_id, self.input_nodes)[0]
+				try:
+					node_input = in_id_map[node.id]
+				except:
+					print node.id
+					print in_id_map
+					print "ERROR"
+					exit()
+				index = self.input_nodes.index(node)
+				self.input_nodes[index].input(node_input)
 			else:
 				node = [nod for nod in self.compute_nodes if nod.id == node_id][0]
 				more_nodes = node.get_missing_inputs()
-				self.recurse_resolve(more_nodes)
+				self.recurse_resolve(more_nodes, in_id_map)
 				node.compute()

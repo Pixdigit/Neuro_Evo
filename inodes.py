@@ -8,7 +8,11 @@ class new_node():
 		self.rand = const_rand(seed)
 		self.id = self.rand.random()
 		self.callers = {}  # id: true if satisfied
+		self.value = 0
 		self.finished = False
+
+	def input(self, value):
+		self.value = value
 
 	def add_in(self, node):
 		self.callers[node.id] = False

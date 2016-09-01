@@ -26,6 +26,7 @@ def test_net():
 	print(test_net.output_nodes)
 	print(test_net.output_nodes[0].id)
 	print("")
+
 	test_net.compute([1])
 
 
@@ -35,4 +36,4 @@ def test_graphs():
 	vis.draw_net(test_net)
 
 test_graphs()
-test_net()
+#test_net()
