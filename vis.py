@@ -28,7 +28,11 @@ def draw_net(net):
 
 	for node in combined_nodes:
 		for node_con in node.callers:
-			g.add_edge(vertexes[node_con], vertexes[node.id])
+			if node_con != -1:
+				g.add_edge(vertexes[node_con], vertexes[node.id])
+
+	if not gt.is_DAG(g):
+		print(("THE WORLD ENDS"))
 
 	gt.graph_draw(g, vertex_color=[1, 1, 1, 0],
 			vertex_fill_color=v_color, vertex_text=v_name)

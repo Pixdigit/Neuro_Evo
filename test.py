@@ -13,27 +13,14 @@ def test_nodes():
 
 
 def test_net():
-	test_net = nets.new_net(1, 2, 1, seed=None)
-	print((test_net.name))
-	print((test_net.input_nodes))
-	print((test_net.input_nodes[0].id))
-	print("")
-	print((test_net.compute_nodes))
-	for node in test_net.compute_nodes:
-		print((node.id))
-		print((node.callers))
-	print("")
-	print(test_net.output_nodes)
-	print(test_net.output_nodes[0].id)
-	print("")
-
-	test_net.compute([1])
+	test_net = nets.new_net(4, 50, 4, seed=1)
+	test_net.compute([1, 2, 3, 4])
 
 
 def test_graphs():
 	import vis
-	test_net = nets.new_net(1, 2, 1, seed=None)
+	test_net = nets.new_net(4, 50, 4, seed=1)
 	vis.draw_net(test_net)
 
-test_graphs()
-#test_net()
+#test_graphs()
+test_net()
