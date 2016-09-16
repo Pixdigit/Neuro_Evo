@@ -14,13 +14,18 @@ def test_nodes():
 
 def test_net():
 	test_net = nets.new_net(4, 50, 4, seed=1)
-	test_net.compute([1, 2, 3, 4])
+	result = test_net.compute([1, 2, 3, 4])
+	print result
+	print nets.checker
 
 
 def test_graphs():
 	import vis
-	test_net = nets.new_net(4, 50, 4, seed=1)
+	test_net = nets.new_net(1, 5, 1, seed=2)
+	result = test_net.compute([1])
+	print result
+	print nets.checker
 	vis.draw_net(test_net)
 
-#test_graphs()
-test_net()
+test_graphs()
+#test_net()

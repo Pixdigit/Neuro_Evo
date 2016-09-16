@@ -4,6 +4,10 @@ import name_gen
 from const_rand import const_rand
 
 
+global checker
+checker = 0
+
+
 def get_by_id(nodes_list, node_id):
 
 	if node_id not in [node.id for node in nodes_list]:
@@ -79,11 +83,13 @@ class new_net():
 		in_id_map = {self.input_nodes[index].id: node_input[index]
 				for index in range(len(node_input))}
 
-		for result_node in self.output_nodes:
-			needed_input = list(result_node.callers.keys())
-			self.recurse_resolve(needed_input, in_id_map)
+		self.recurse_resolve([node.id for node in self.output_nodes], in_id_map)
+
+		return [node.value for node in self.output_nodes]
 
 	def recurse_resolve(self, node_ids, in_id_map, pre_chk_nodes=[]):
+		global checker
+		checker += 1
 		checked_nodes = [node for node in self.input_nodes + pre_chk_nodes]
 		for node_id in node_ids:
 			if node_id in [node.id for node in self.input_nodes]:
@@ -92,8 +98,9 @@ class new_net():
 				index = self.input_nodes.index(node)
 				self.input_nodes[index].input(node_input)
 			else:
-				node = get_by_id(self.compute_nodes, node_id)
+				node = get_by_id(self.compute_nodes + self.output_nodes, node_id)
 				if node not in checked_nodes:
+					print node_id
 					more_nodes = list(node.callers.keys())
 					self.recurse_resolve(more_nodes, in_id_map, checked_nodes)
 					node_input = {}
