@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import inodes
 import nets
+import competition
 import sys
 #from pprint import pprint
 
@@ -17,14 +18,14 @@ def test_nodes():
 def test_net():
 	testing_net = nets.new_net(4, 50, 4, seed=None)
 	result = testing_net.compute([1, 2, 3, 4])
-	#print result
-	#print nets.checker
+	print result
+	print nets.checker
 
 conf = {}
 
 if len(sys.argv) == 1:
 	test_net()
-else:
+elif "-n" in sys.argv or "--network" in sys.argv:
 	#set network configuration
 	try:
 
@@ -81,3 +82,28 @@ else:
 	if conf["graph"]:
 		import vis
 		vis.draw_net(testing_net)
+
+elif "-c" in sys.argv or "--compo" in sys.argv:
+
+	try:
+		try:
+			d_nets = sys.argv[sys.argv.index("-dn") + 1]
+		except:
+			d_nets = sys.argv[sys.argv.index("--nets") + 1]
+	except:
+		d_nets = 100
+
+	try:
+		try:
+			conf_index = sys.argv.index("-c")
+		except:
+			conf_index = sys.argv.index("--config")
+
+		conf = []
+		for i in range(3):
+			conf.append(int(sys.argv[conf_index + 1 + i]))
+
+	except:
+		conf = [3, 50, 3]
+
+	test_compo = competition.compo(d_nets, conf)
