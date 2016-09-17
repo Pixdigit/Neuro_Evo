@@ -8,14 +8,6 @@ global checker
 checker = 0
 
 
-def get_by_id(nodes_list, node_id):
-
-	if node_id not in [node.id for node in nodes_list]:
-		raise IndexError("No node with id found. " + str(node_id))
-
-	return [node for node in nodes_list if node.id == node_id][0]
-
-
 class new_net():
 
 	def __init__(self, d_in, d_comp, d_out, seed=None):
@@ -35,7 +27,8 @@ class new_net():
 			self.input_nodes.append(in_node)
 
 		for i in range(d_comp):
-			d_node_inputs = self.rand.randint(1, 10)
+			d_node_inputs = self.rand.randint(1,
+						min(len(self.compute_nodes + self.input_nodes), 10))
 
 			compute_node = inodes.new_node(seed=self.rand.random())
 
@@ -52,7 +45,8 @@ class new_net():
 			self.compute_nodes.append(compute_node)
 
 		for i in range(d_out):
-			d_node_inputs = self.rand.randint(1, 10)
+			d_node_inputs = self.rand.randint(1,
+						min(len(self.compute_nodes + self.input_nodes), 10))
 			output_node = inodes.new_node(seed=self.rand.random())
 
 			possible_nodes = self.compute_nodes + self.input_nodes
@@ -80,35 +74,37 @@ class new_net():
 
 		assert len(node_input) == len(self.input_nodes)  # Not enough input given
 
-		in_id_map = {self.input_nodes[index].id: node_input[index]
+		in_map = {self.input_nodes[index]: node_input[index]
 				for index in range(len(node_input))}
 
-		self.recurse_resolve([node.id for node in self.output_nodes], in_id_map)
+		self.prepare_recursion()
+		self.recurse_resolve(self.output_nodes, in_map)
 
 		return [node.value for node in self.output_nodes]
 
-	def recurse_resolve(self, node_ids, in_id_map, pre_chk_nodes=[]):
+	def prepare_recursion(self):
+		self.checked_nodes = list(self.input_nodes)
+
+	def recurse_resolve(self, nodes, in_map):
 		global checker
 		checker += 1
-		checked_nodes = [node for node in self.input_nodes + pre_chk_nodes]
-		for node_id in node_ids:
-			if node_id in [node.id for node in self.input_nodes]:
-				node = get_by_id(self.input_nodes, node_id)
-				node_input = in_id_map[node.id]
+		for node in nodes:
+			if node in self.input_nodes:
+				node_input = in_map[node]
 				index = self.input_nodes.index(node)
 				self.input_nodes[index].input(node_input)
 			else:
-				node = get_by_id(self.compute_nodes + self.output_nodes, node_id)
-				if node not in checked_nodes:
-					print node_id
+				if node not in self.checked_nodes:
+					checker += 0.00001
 					more_nodes = list(node.callers.keys())
-					self.recurse_resolve(more_nodes, in_id_map, checked_nodes)
+					self.recurse_resolve(more_nodes, in_map)
 					node_input = {}
-					for new_node_id in node.callers:
-						node_input[new_node_id] = get_by_id(self.compute_nodes + self.input_nodes,
-									new_node_id).value
+					for new_node in list(node.callers.keys()):
+						value = [chk_node.value for chk_node in self.compute_nodes + self.input_nodes
+							if chk_node.id == new_node.id][0]
+						node_input[new_node] = value
 					node.compute(node_input)
-					checked_nodes.append(node)
+					self.checked_nodes.append(node)
 
 	def rm_no_out_nodes(self):
 		all_callers = []
@@ -118,5 +114,5 @@ class new_net():
 					all_callers.append(caller)
 
 		for node in self.compute_nodes:
-			if node.id not in all_callers:
+			if node not in all_callers:
 				self.compute_nodes.remove(node)

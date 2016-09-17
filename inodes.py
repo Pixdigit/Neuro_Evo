@@ -16,17 +16,17 @@ class new_node():
 	def __init__(self, seed=None):
 		self.rand = const_rand(seed)
 		self.id = self.rand.random()
-		self.callers = {}  # id: true if satisfied
+		self.callers = {}  # node_obj: true if satisfied
 		self.value = 0
 
 	def add_in(self, node):
-		self.callers[node.id] = False
+		self.callers[node] = False
 
 	def set_weights(self):
 		for caller in self.callers:
 			self.callers[caller] = self.rand.random() * 2 - 0.5
 
-	def get_missing_inputs(self):
+	def get_inputs(self):
 		return list(self.callers.keys())
 
 	def input(self, value):
@@ -34,8 +34,8 @@ class new_node():
 
 	def compute(self, input_dict):
 		value = 0
-		for node_id in input_dict.keys():
-			value += self.callers[node_id] * input_dict[node_id]
+		for node in input_dict.keys():
+			value += self.callers[node] * input_dict[node]
 		self.value = value
 		#TODO: add function
 
