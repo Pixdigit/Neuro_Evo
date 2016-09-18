@@ -12,10 +12,12 @@ class new_net():
 
 	def __init__(self, d_in, d_comp, d_out, seed=None):
 		self.rand = const_rand(seed)
-		self.name = name_gen.new_name()
+		self.name = name_gen.new_name(self.rand.choice)
 		self.input_nodes = []
 		self.compute_nodes = []
 		self.output_nodes = []
+
+		self.result = []
 
 		self.build_cons(d_in, d_comp, d_out)
 
@@ -80,7 +82,9 @@ class new_net():
 		self.prepare_recursion()
 		self.recurse_resolve(self.output_nodes, in_map)
 
-		return [node.value for node in self.output_nodes]
+		self.result = [node.value for node in self.output_nodes]
+
+		return self.result
 
 	def prepare_recursion(self):
 		self.checked_nodes = list(self.input_nodes)
@@ -95,7 +99,7 @@ class new_net():
 				self.input_nodes[index].input(node_input)
 			else:
 				if node not in self.checked_nodes:
-					checker += 0.00001
+					checker += 0.000001
 					more_nodes = list(node.callers.keys())
 					self.recurse_resolve(more_nodes, in_map)
 					node_input = {}

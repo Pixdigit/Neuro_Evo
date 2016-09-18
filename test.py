@@ -3,7 +3,8 @@ import inodes
 import nets
 import competition
 import sys
-#from pprint import pprint
+import game
+from pprint import pprint
 
 
 def test_nodes():
@@ -25,7 +26,7 @@ conf = {}
 
 if len(sys.argv) == 1:
 	test_net()
-elif "-n" in sys.argv or "--network" in sys.argv:
+elif "--net" in sys.argv:
 	#set network configuration
 	try:
 
@@ -83,27 +84,64 @@ elif "-n" in sys.argv or "--network" in sys.argv:
 		import vis
 		vis.draw_net(testing_net)
 
-elif "-c" in sys.argv or "--compo" in sys.argv:
+elif "--compo" in sys.argv:
 
 	try:
 		try:
-			d_nets = sys.argv[sys.argv.index("-dn") + 1]
+			d_nets = int(sys.argv[sys.argv.index("-dn") + 1])
 		except:
-			d_nets = sys.argv[sys.argv.index("--nets") + 1]
+			d_nets = int(sys.argv[sys.argv.index("--nets") + 1])
 	except:
 		d_nets = 100
 
 	try:
 		try:
-			conf_index = sys.argv.index("-c")
+			conf_index = sys.argv.index("-c") + 1
 		except:
-			conf_index = sys.argv.index("--config")
+			conf_index = sys.argv.index("--config") + 1
 
 		conf = []
-		for i in range(3):
-			conf.append(int(sys.argv[conf_index + 1 + i]))
+		for i in xrange(3):
+			conf.append(int(sys.argv[conf_index + i]))
 
 	except:
 		conf = [3, 50, 3]
 
-	test_compo = competition.compo(d_nets, conf)
+	try:
+		try:
+			inp_index = sys.argv.index("--input") + 1
+		except:
+			inp_index = sys.argv.index("-i") + 1
+
+		net_input = []
+		for i in xrange(conf[0]):
+			net_input.append(int(sys.argv[inp_index + i]))
+
+
+	except:
+		net_input = []
+		for i in xrange(conf[0]):
+			net_input.append(i)
+
+	try:
+		try:
+			seed_pos = sys.argv.index("-s") + 1
+		except:
+			seed_pos = sys.argv.index("--seed") + 1
+
+		try:
+			seed = int(sys.argv[seed_pos])
+		except:
+			seed = sys.argv[seed_pos]
+	except:
+		seed = None
+
+	test_compo = competition.compo(d_nets, conf, seed=seed)
+	test_compo.set_perf_func(lambda net: net.compute(net_input)[0])
+	test_compo.do_gen()
+	print([net.name for net in test_compo.nets])
+	pprint({net.name: net.compute(net_input)[0] for net in test_compo.nets})
+
+elif "--game" in sys.argv:
+	game.main.run(None)
+	input()

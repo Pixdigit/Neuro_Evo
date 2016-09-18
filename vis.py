@@ -24,12 +24,12 @@ def draw_net(net):
 
 		v_color[vert] = mode
 		v_name[vert] = str(node.id)[:4]
-		vertexes[node.id] = vert
+		vertexes[node] = vert
 
 	for node in combined_nodes:
 		for node_con in node.callers:
 			if node_con != -1:
-				g.add_edge(vertexes[node_con], vertexes[node.id])
+				g.add_edge(vertexes[node_con], vertexes[node])
 
 	if not gt.is_DAG(g):
 		print(("THE WORLD ENDS"))
