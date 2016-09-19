@@ -2,12 +2,13 @@
 import pygame
 import os
 
+
 def init():
 	global screen
 	global res
 
 	#set resolution
-	res = (1000,1000)
+	res = (1000, 1000)
 
 	#set screen centered
 	os.environ["SDL_VIDEO_CENTERED"] = "1"

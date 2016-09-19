@@ -16,17 +16,17 @@ class new_node():
 	def __init__(self, seed=None):
 		self.rand = const_rand(seed)
 		self.id = self.rand.random()
-		self.callers = {}  # node_obj: true if satisfied
+		self.callers = {}  # node_obj: weights
 		self.value = 0
 
 	def add_in(self, node):
-		self.callers[node] = False
+		self.callers[node] = 0
 
 	def set_weights(self):
 		for caller in self.callers:
 			self.callers[caller] = self.rand.random() * 2 - 0.5
 
-	def get_inputs(self):
+	def get_callers(self):
 		return list(self.callers.keys())
 
 	def input(self, value):
@@ -39,12 +39,21 @@ class new_node():
 		self.value = value
 		#TODO: add function
 
+	def get_clone(self):
+		clone = new_node(seed=self.rand.random())
+
+		clone.id = self.id
+		clone.callers = dict(self.callers)
+		return clone
+
 	def get_mutate(self, mutation_factor=1):
-		mut_type = self.rand.random()
+		child = self.get_clone()
+
+		mut_type = child.rand.random()
 
 		#Complete new weights in 10%
 		if 0.8 <= mut_type < 0.9:
-			self.set_weights()
+			child.set_weights()
 
 		#Change weights in 80%
 		if mut_type < 0.8:
@@ -54,15 +63,17 @@ class new_node():
 			if mut_type < 0.2:
 				limit = 3
 
-			for index in range(len(self.weights)):
+			for index in range(len(child.weights)):
 				#-limit < factor < limit
-				factor = (self.rand.random() * (limit - 1)) + 1
+				factor = (child.rand.random() * (limit - 1)) + 1
 
 				#very seldomly change polarity with 5%
 				if mut_type < 0.05:
 					factor *= -1
 
-				if self.rand.random() < 0.6:
+				if child.rand.random() < 0.6:
 					factor = 1 / factor
 
-				self.weights[index] *= factor
+				child.weights[index] *= factor
+
+		return child

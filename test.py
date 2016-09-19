@@ -4,7 +4,7 @@ import nets
 import competition
 import sys
 import game
-from pprint import pprint
+import operator
 
 
 def test_nodes():
@@ -117,7 +117,6 @@ elif "--compo" in sys.argv:
 		for i in xrange(conf[0]):
 			net_input.append(int(sys.argv[inp_index + i]))
 
-
 	except:
 		net_input = []
 		for i in xrange(conf[0]):
@@ -136,11 +135,23 @@ elif "--compo" in sys.argv:
 	except:
 		seed = None
 
+	try:
+		try:
+			gens_index = sys.argv.index("-g") + 1
+		except:
+			gens_index = sys.argv.index("--gens") + 1
+		gens = int(sys.argv[gens_index])
+	except:
+		gens = 1
+
 	test_compo = competition.compo(d_nets, conf, seed=seed)
 	test_compo.set_perf_func(lambda net: net.compute(net_input)[0])
-	test_compo.do_gen()
-	print([net.name for net in test_compo.nets])
-	pprint({net.name: net.compute(net_input)[0] for net in test_compo.nets})
+	for i in range(gens):
+		results = test_compo.do_gen()
+		rounded_results = {name: round(results[name], 3) for name in results}
+		sorted_names = sorted(rounded_results.items(),
+				key=operator.itemgetter(1), reverse=True)
+		print sorted_names
 
 elif "--game" in sys.argv:
 	game.main.run(None)
