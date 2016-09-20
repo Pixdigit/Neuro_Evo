@@ -33,6 +33,8 @@ class compo():
 
 		if d_kills is None:
 			d_kills = int(len(self.nets) / 20.0 + 1)
+		elif 0 <= d_kills <= 1:
+			d_kills = int(len(self.nets) * d_kills + 1)
 
 		for i in range(d_kills):
 			rand_index = int(self.rand.triangular(0, len(self.nets), len(self.nets)))

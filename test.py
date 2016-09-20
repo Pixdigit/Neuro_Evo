@@ -147,7 +147,7 @@ elif "--compo" in sys.argv:
 	test_compo = competition.compo(d_nets, conf, seed=seed)
 	test_compo.set_perf_func(lambda net: net.compute(net_input)[0])
 	for i in range(gens):
-		results = test_compo.do_gen()
+		results = test_compo.do_gen(d_kills=0.5)
 		rounded_results = {name: round(results[name], 3) for name in results}
 		sorted_names = sorted(rounded_results.items(),
 				key=operator.itemgetter(1), reverse=True)

@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import inodes
 import name_gen
+import copy
 from const_rand import const_rand
 
 
@@ -94,11 +95,6 @@ class new_net():
 		global checker
 		checker += 1
 		for node in nodes:
-			if -1 in node.callers and node not in self.input_nodes:
-				print [node.id]
-				print [node.id for node in self.input_nodes]
-				exit()
-
 			if node in self.input_nodes:
 				node_input = in_map[node]
 				index = self.input_nodes.index(node)
@@ -131,11 +127,11 @@ class new_net():
 	def get_clone(self):
 		clone = new_net(0, 0, 0, seed=self.rand.random())
 
-		for node in self.input_nodes:
+		for node in list(self.input_nodes):
 			clone.input_nodes.append(node.get_clone())
-		for node in self.compute_nodes:
+		for node in list(self.compute_nodes):
 			clone.compute_nodes.append(node.get_clone())
-		for node in self.output_nodes:
+		for node in list(self.output_nodes):
 			clone.output_nodes.append(node.get_clone())
 
 		all_nodes = clone.input_nodes + clone.compute_nodes + clone.output_nodes

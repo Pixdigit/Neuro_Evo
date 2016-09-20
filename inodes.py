@@ -17,6 +17,7 @@ class new_node():
 		self.rand = const_rand(seed)
 		self.id = self.rand.random()
 		self.callers = {}  # node_obj: weights
+		self.function = self.rand.choice(funcs)
 		self.value = 0
 
 	def add_in(self, node):
@@ -36,14 +37,23 @@ class new_node():
 		value = 0
 		for node in input_dict.keys():
 			value += self.callers[node] * input_dict[node]
-		self.value = value
-		#TODO: add function
+		self.value = self.function(value)
 
 	def get_clone(self):
 		clone = new_node(seed=self.rand.random())
 
 		clone.id = self.id
-		clone.callers = dict(self.callers)
+		clone.function = self.function
+
+		clone.callers = {}
+
+		for caller in self.callers:
+			if caller == -1:
+				clone.callers[-1] = 1
+			else:
+				new_caller = new_node()
+				new_caller.id = caller.id
+				clone.callers[new_caller] = self.callers[caller]
 		return clone
 
 	def get_mutate(self, mutation_factor=1):
